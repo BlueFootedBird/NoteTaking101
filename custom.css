@@ -1,0 +1,283 @@
+.markdown-reading-view pre:not([class^=language-]) {
+    background-color: rgb(41, 41, 41);
+    width: auto;
+    color: #bebebe;
+    overflow: auto;
+    white-space: pre;
+    line-height: 125%;
+    font-size: 14px;
+    font-family: "Cascadia Code", monospace;
+    border-radius: 5px;
+    padding: 10px !important;  
+}
+
+  
+pre {
+    background-color: rgb(41, 41, 41);
+    width: auto;
+    color: #bebebe;
+    overflow: auto;
+    white-space: pre;
+    line-height: 125%;
+    font-size: 14px;
+    font-family: "Cascadia Code", monospace;
+    border-radius: 5px;
+    padding: 10px !important;  
+}
+  
+
+
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100% ;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 15px;
+  color: #000000;
+}
+
+th {
+  background-color: #002244 !important;
+  color: #ffffff !important;
+  text-transform: uppercase;
+}
+
+tr {
+  border-bottom: 1px solid #000000;
+}
+
+tr:nth-of-type(even) {
+  background-color: #2a2b2c;
+}
+tr:nth-of-type(odd) {
+  background-color: #dddddd;
+}
+
+tr:last-of-type {
+  border-bottom: 2px solid #000e1b;
+}
+
+
+
+@page {
+    margin-top: 0.80in;
+    padding-top: 10px;
+    margin-bottom: 0.80in;
+    padding-bottom: 10px;
+    margin-left: 0.5in;
+    margin-right: 0.5in;    
+  }
+  
+  @media print {
+
+    @page {
+      border: 3px solid black !important;
+      border-radius: 10px !important;
+    }
+
+    body {
+      font-size: 13px; /* Adjust this value to your preferred font size */
+    }
+    p {
+      font-size: 13px; /* Adjust this value to your preferred font size */
+    }
+
+    .markdown-preview-view ul,
+    .markdown-preview-view ol {
+      font-size: 13px; /* Adjust this value to your preferred font size */
+    }
+  
+    .markdown-preview-view ul li,
+    .markdown-preview-view ol li {
+      font-size: 13px; /* Adjust this value to your preferred font size */
+    }
+
+    .markdown-preview-view img {
+      border: 5px solid rgb(41, 41, 41) ; /* Adjust the border width as needed */
+      padding: 0px; /* Optional: Add padding for spacing between the image and the border */
+      border-radius: 8px;
+    }
+
+    .invisible {
+      display: block; /* Show the element when printed */
+   }
+
+    /* Add a <br> tag when printed */
+    .invisible::after {
+        content: "\A"; /* Use the content property to insert a line break */
+        white-space: pre; /* Preserve white space to ensure the line break works */
+    }
+
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+    }
+    
+    table {
+      width: 100% ;
+      border-collapse: collapse;
+      margin: 25px 0;
+      font-size: 18px;
+      text-align: left;
+    }
+    
+    th, td {
+      padding: 12px 15px;
+      color: #000000;
+    }
+    
+    th {
+      background-color: #002244 !important;
+      color: #ffffff !important;
+      text-transform: uppercase;
+    }
+    
+    tr {
+      border-bottom: 1px solid #000000;
+    }
+    
+    tr:nth-of-type(even) {
+      background-color: #2a2b2c;
+    }
+    tr:nth-of-type(odd) {
+      background-color: #dddddd;
+    }
+    
+    tr:last-of-type {
+      border-bottom: 2px solid #000e1b;
+    }
+
+    code, code[class*="language-"],
+    pre, pre[class*="language-"] {
+      font-size: 10pt;
+      font-family: var(--code-font-family);
+      color: rgb(255, 0, 0) !important;
+      background: none !important;
+    }
+  
+    pre,
+    code span,
+    code {
+      color: #d4d4d4 !important /* Text color */
+    }
+  
+    code {
+      background-color: rgb(255, 255, 255) !important;
+      color: #000000 !important;
+      font-size: 11px;
+      font-family: "Cascadia Code", monospace;
+      border-radius: 5px;
+      padding: 2px 4px; /* Adjust padding for inline code */
+    }
+  
+    pre {
+      background-color: rgb(41, 41, 41) !important;
+      width: auto;
+      color: #bebebe;
+      overflow: auto;
+      white-space: pre;
+      line-height: 125%;
+      font-size: 11px;
+      font-family: "Cascadia Code", monospace;
+      border-radius: 8px !important;
+      padding: 10px !important;
+    }
+  
+    pre > code {
+      font-size: 11px !important;
+      border: none !important;
+      border-radius: 0 !important;
+      border-radius: 5px !important
+    }
+  
+  }
+  
+  
+  
+div[data-path$='.png']{
+    display: none;
+}
+  
+div[data-path$='.jpg']{
+    display: none;
+}
+  
+div[data-path$='.jpeg']{
+    display: none;
+}
+  
+.center-italic {
+    text-align: center;
+    font-style: italic;
+    line-height: 0%;
+}
+
+.center-red-italic {
+    text-align: left;
+    width: 75%;
+    margin: 0 auto;
+    color: rgb(254, 57, 57);
+    font-style: italic;
+}
+
+.redline {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(255, 0, 0); /* You can change the color as needed */
+    margin: 0 auto; /* Center the line horizontally */
+}
+
+.center-yellow-italic {
+    text-align: left;
+    width: 75%;
+    margin: 0 auto;
+    color: rgb(255, 192, 57);
+    font-style: italic;
+}
+
+.yellowline {
+    width: 100%;
+    height: 1px;
+    background-color:rgb(255, 192, 57);
+    margin: 0 auto; /* Center the line horizontally */
+}
+
+.center-green-italic {
+    text-align: left;
+    width: 75%;
+    margin: 0 auto;
+    color: rgb(0, 176, 80);
+    font-style: italic;
+}
+
+.greenline {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(0, 176, 80);
+    margin: 0 auto; /* Center the line horizontally */
+}
+
+.center-blue-italic {
+    text-align: left;
+    width: 75%;
+    margin: 0 auto;
+    color: rgb(20, 157, 255);
+    font-style: italic;
+}
+
+.blueline {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(20, 157, 255);
+    margin: 0 auto; /* Center the line horizontally */
+}
