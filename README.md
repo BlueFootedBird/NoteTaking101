@@ -35,14 +35,18 @@ I find that if I'm doing an actual report for a real client - screenshots may be
 
  
 ### 3. Templater for Automation
+
+#### 3.a I don't remember syntax 
+
 Templater is really quite magical. I use it in my notes for automated report writing, command syntax, and my enumeration methodology. For instance, this is an example of a template I made for when I forget the syntax of a tool called bloodhound-python. 
 ![BloodHoundPython](/media/bloodhoundpython.png)
 
 Look at the video below of what happens when I execute this template. When I call this template, it will prompt me for a username, password, dcip, and domain. Once I give it that information, it will construct the command for me and insert it into my notes for me to copy/paste. This might seem like a small improvement, but it helps a lot when I'm under a time crunch and don't want to spend 1-3 minutes trying to remember the syntax of common commands I run. This can be executed from anywhere in Obsidian, not just when I'm on this note.
 ![Templater1](/media/templater1.gif)
 
+#### 3.b I don't remember my methodology
 
-Now onto the part that made me feel confident in publishing something public about my notes. I found myself often missing certain steps of my methodology when I was rushing too fast, or simply just forgot to check for a privilege escalation vector. I was also inspired about the talk found here that empahsizes the importance of checklists: https://www.youtube.com/watch?v=ydqtyfxY0EA. 
+Now onto the part that made me feel confident in publishing something about my notes. I found myself often missing certain steps of my methodology when I was rushing too fast, or simply just forgot to check for a privilege escalation vector. I was also inspired about the talk found here that empahsizes the importance of checklists: https://www.youtube.com/watch?v=ydqtyfxY0EA. 
 
 Thus, I've scripted out SA commands, Priv Esc commands, and Post-Exploitation commands within Obsidian using Templater. How does that work? Great question. I'll give a brief example of how the SA works. When I run the template called "(SA) Windows" Templater automatically creates a subfolder called "SituationalAwareness" in the current directory of the note I ran the template from. The template also creates subnotes in that folder pre-populated with content for me to copy/paste, as well as connecting/linking the subnotes to the note I wanted to run the SA commands on. This allows me to easily navigate back and forth between the SA notes and my walkthrough of the machine to make sure I'm hitting each checklist.
 ![Templater1](/media/templater2.gif)
@@ -50,3 +54,5 @@ Thus, I've scripted out SA commands, Priv Esc commands, and Post-Exploitation co
 
 I've also done this for Windows Privilege Escalation, which takes the groundwork I laid for the "(SA) Windows" Template script and pumps it full of steriods. 
 ![Templater1](/media/templater3.gif)
+
+(TODO - A work in progress)
